@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Contact Us</h1>
+      <form id="contact_form" name="contact_form" method="post">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label">Full Name *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email Address *</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="youremail@example.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input
+            type="text"
+            class="form-control"
+            id="subject"
+            name="subject"
+            placeholder="Enter your message subject"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message *</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVFQWjT9uVVaI4rA1iM1EAcsxA9ks58CwlW++IgFUINvT6LAznM0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
